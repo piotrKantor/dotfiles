@@ -1,0 +1,26 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# suit to get started fast.
+
+[general]
+ui = TTYUI
+accounts = gmail
+
+[Account gmail]
+localrepository = Local
+remoterepository = Remote
+#autorefresh = 60
+#quick = 30
+
+[Repository Local]
+type = Maildir
+localfolders = ~/.Mails/${account} # It could be anything, but that's my convention
+
+
+[Repository Remote]
+type = Gmail
+remotehost = imap.gmail.com
+remoteport = 993
+remoteuser = ${login}
+remotepass = ${pass} # You should generate application password with https://goo.gl/XHQgEf
+readonly = False
+ssl = yes
