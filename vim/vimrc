@@ -1,0 +1,10 @@
+" GUI
+set t_Co=256
+syntax on
+colorscheme xoria256
+
+" Behaviour
+set autoindent
+set smartindent
+set nocompatible
+set showmatch
